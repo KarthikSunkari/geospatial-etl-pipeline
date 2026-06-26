@@ -1,0 +1,67 @@
+Column,Description,Source
+Census_Tract_Code,Unique 6-digit code identifying the Census tract.,Census shapefile
+FIPS_Code,Full federal tract identifier (state + county + tract).,Census shapefile
+Year,Reporting year of the dataset.,Analysis year
+Jurisdiction,City or jurisdiction associated with the tract.,Census/Municipal data
+PUMA,Public Use Microdata Area for ACS/PUMS analysis.,Census PUMA boundaries
+Sales_Count,Number of actual property sales in tract and year.,Property transactions
+Median_Sale_Price_Actual,Actual median sale price from matched sales for tract/year. NaN if no sales recorded.,Property transactions
+Imputed_Median_Sale_Price_Actual,"Final tract median sale price. Uses actual median where observed; otherwise imputed from ACS home values/incomes, LODES job metrics, and neighboring-year sale prices.",Imputed from ACS/LODES/Property transactions
+Median_Price_Per_SqFt_Actual,Actual median price per square foot from sales.,Property transactions
+Median_Square_Feet_Actual,Actual median size (square feet) of sold homes.,Property transactions
+Median_Bedrooms_Actual,Actual median bedroom count of sold homes.,Property transactions
+Median_Bathrooms_Actual,Actual median bathroom count of sold homes.,Property transactions
+Median_Income_Households_Previous_Year,Median household income for previous year.,ACS 5-year estimates
+Median_Value_Imputed_ACS,"Median home value for tract, adjusted from ACS 5-year estimates.",ACS 5-year estimates (imputed)
+Median_Gross_Rent_Imputed_ACS,"Median gross rent for tract, adjusted from ACS 5-year estimates.",ACS 5-year estimates (imputed)
+Persons_Total,Total population in tract.,ACS 5-year estimates
+Households_Total,Total households in tract.,ACS 5-year estimates
+Avg_Nb_People_Households,Average household size.,ACS 5-year estimates
+Median_Age_Persons,Median age of persons in tract.,ACS 5-year estimates
+Density_People_Land_km2,Population density (persons per square kilometer of land).,Calculated from ACS
+Density_Housing_Land_km2,Housing unit density (units per square kilometer of land).,Calculated from ACS
+VLI_Cutoff_Estimated,Estimated Very Low-Income cutoff in dollars based on HCD income limits.,HCD income limits (estimated)
+LI_Cutoff_Estimated,Estimated Low-Income cutoff in dollars based on HCD income limits.,HCD income limits (estimated)
+MOD_Cutoff_Estimated,Estimated Moderate-Income cutoff in dollars based on HCD income limits.,HCD income limits (estimated)
+VLI_Households_Prop,Proportion of households in Very Low-Income category.,ACS 5-year estimates
+LI_Households_Prop,Proportion of households in Low-Income category.,ACS 5-year estimates
+MOD_Households_Prop,Proportion of households in Moderate-Income category.,ACS 5-year estimates
+AMOD_Households_Prop,Proportion of households in Above Moderate-Income category.,ACS 5-year estimates
+Estimated_Income_Category_Census,Overall tract income category classification based on ACS/HCD data.,Calculated from ACS and HCD
+Actual_Price_To_Income_Ratio,Ratio of actual median sale price to median household income.,Calculated from Property transactions and ACS
+ACS_Estimated_Price_To_Income_Ratio,Ratio of ACS-imputed home value to median household income.,Calculated from ACS
+Prop_Persons_Income_Below_Poverty_Level,Proportion of persons with income below the poverty level.,ACS 5-year estimates
+Prop_Persons_60_years_and_over,Proportion of persons aged 60 or older.,ACS 5-year estimates
+Prop_Labor_Force_Unemployed,Unemployment rate for the labor force.,ACS 5-year estimates
+Prop_Commuting_Work_Over_45_min,Proportion of workers with commute time over 45 minutes.,ACS 5-year estimates
+Housing_Units_Total,Total housing units in tract.,ACS 5-year estimates
+Total_Units_BR,Total housing units in Builder's Remedy projects in tract.,HCD APR
+Builders_Remedy_Intensity_Pct,Builder's Remedy units as a percent of existing housing units.,Calculated from HCD APR and ACS
+Nb_Units_Tot_Proposed,Total housing units proposed in development pipeline.,HCD APR
+Nb_Submissions,Number of development submissions (projects) in tract.,HCD APR
+Pipeline_Supply_Pct,Proposed units as a percent of existing housing units.,Calculated from HCD APR and ACS
+Development_Approval_Rate_Pct,Percent of proposed units that were approved.,Calculated from HCD APR
+Land_Area_km2,Land area of tract in square kilometers.,Census geography
+Total_Jobs,Total jobs located in tract (workplace area).,LODES WAC
+High_Wage_Jobs,Number of high-wage jobs located in tract (LODES high-wage category).,LODES WAC
+Jobs_Professional_Tech,Number of professional and technical jobs in tract.,LODES WAC
+Jobs_Finance,Number of finance sector jobs in tract.,LODES WAC
+Jobs_Information,Number of information sector jobs in tract.,LODES WAC
+Jobs_Manufacturing,Number of manufacturing jobs in tract.,LODES WAC
+Jobs_Retail,Number of retail jobs in tract.,LODES WAC
+Jobs_Healthcare,Number of healthcare jobs in tract.,LODES WAC
+High_Wage_Job_Share_Pct,High-wage jobs as a percent of total jobs.,Calculated from LODES WAC
+Tech_Job_Share_Pct,Professional/tech jobs as a percent of total jobs.,Calculated from LODES WAC
+White_Collar_Job_Share_Pct,White-collar jobs as a percent of total jobs.,Calculated from LODES WAC
+Jobs_Per_Capita,Jobs per resident (Total jobs / Persons_Total).,Calculated from LODES WAC and ACS
+Jobs_Per_Housing_Unit,Jobs per housing unit (Total jobs / Housing_Units_Total).,Calculated from LODES WAC and ACS
+Job_Density_Per_km2,Job density (jobs per square kilometer).,Calculated from LODES WAC
+Resident_Workers_Total,Total resident workers living in tract.,LODES RAC
+Resident_Workers_High_Wage,Resident workers in high-wage jobs (LODES high-wage category).,LODES RAC
+Resident_Workers_Prof_Tech,Resident workers in professional/tech occupations.,LODES RAC
+Resident_High_Wage_Share_Pct,Proportion of resident workers in high-wage jobs.,Calculated from LODES RAC
+Resident_Tech_Worker_Share_Pct,Proportion of resident workers in professional/tech jobs.,Calculated from LODES RAC
+Jobs_Housing_Balance_Ratio,Ratio of workplace jobs to resident workers (jobs-housing balance indicator).,Calculated from LODES WAC and RAC
+Wealth_Retention_Ratio,Ratio of resident high-wage workers to workplace high-wage jobs (proxy for local economic capture).,Calculated from LODES WAC and RAC
+Tech_Resident_Workplace_Ratio,Ratio of resident tech workers to workplace tech jobs.,Calculated from LODES WAC and RAC
+Resident_Employment_Rate_Pct,Employment rate among tract residents.,Calculated from LODES RAC and ACS

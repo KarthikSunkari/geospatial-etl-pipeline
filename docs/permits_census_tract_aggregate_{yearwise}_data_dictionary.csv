@@ -1,0 +1,18 @@
+Column,Description,Source
+Census_Tract_Code,Unique 6-digit code identifying the Census tract.,2020 TIGER/Line® Census shapefile
+FIPS_Code,Full federal tract identifier (state + county + tract).,2020 TIGER/Line® Census shapefile
+Latitude_Centroid,Latitude coordinate of the Census tract geographic center.,Calculated from Census tract geometry
+Longitude_Centroid,Longitude coordinate of the Census tract geographic center.,Calculated from Census tract geometry
+no_of_building_permits,Total number of building permits issued within the Census tract for the year.,HCD APR Table A2
+bp_vlow_income_single_family,"Very low-income housing units (≤50% AMI) permitted in single-family housing (detached, attached, and ADUs).",HCD APR Table A2
+bp_low_income_single_family,"Low-income housing units (50-80% AMI) permitted in single-family housing (detached, attached, and ADUs).",HCD APR Table A2
+bp_mod_income_single_family,"Moderate-income housing units (80-120% AMI) permitted in single-family housing (detached, attached, and ADUs).",HCD APR Table A2
+bp_above_mod_income_single_family,"Above moderate-income housing units (>120% AMI) permitted in single-family housing (detached, attached, and ADUs).",HCD APR Table A2
+bp_vlow_income_multi_family,Very low-income housing units (≤50% AMI) permitted in multi-family housing (2-4 plex and 5+ units).,HCD APR Table A2
+bp_low_income_multi_family,Low-income housing units (50-80% AMI) permitted in multi-family housing (2-4 plex and 5+ units).,HCD APR Table A2
+bp_mod_income_multi_family,Moderate-income housing units (80-120% AMI) permitted in multi-family housing (2-4 plex and 5+ units).,HCD APR Table A2
+bp_above_mod_income_multi_family,Above moderate-income housing units (>120% AMI) permitted in multi-family housing (2-4 plex and 5+ units).,HCD APR Table A2
+bp_vlow_income_ADUs,"Very low-income housing units (≤50% AMI) permitted in accessory dwelling units (ADUs, granny flats, in-law units).",HCD APR Table A2
+bp_low_income_ADUs,"Low-income housing units (50-80% AMI) permitted in accessory dwelling units (ADUs, granny flats, in-law units).",HCD APR Table A2
+bp_mod_income_ADUs,"Moderate-income housing units (80-120% AMI) permitted in accessory dwelling units (ADUs, granny flats, in-law units).",HCD APR Table A2
+bp_above_mod_income_ADUs,"Above moderate-income housing units (>120% AMI) permitted in accessory dwelling units (ADUs, granny flats, in-law units).",HCD APR Table A2
